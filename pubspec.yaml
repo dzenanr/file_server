@@ -1,0 +1,4 @@
+name: file_server
+description: 'A command-line application: simple file server in Dart.'
+dependencies:
+  path: any
