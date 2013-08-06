@@ -40,9 +40,9 @@ startServer(String directoryAbsolutePath) {
 main() {
   // Windows
   // var directoryAbsolutePath = 'C:\\server_files';
-  // var directoryAbsolutePath = 'C:/server_files';
+  var directoryAbsolutePath = 'C:/server_files';
   // Ubuntu
-  var directoryAbsolutePath = '/home/dr/server_files';
+  // var directoryAbsolutePath = '/home/dr/server_files';
   // files in the directory: index.html, readme.txt, teams.pdf
   startServer(directoryAbsolutePath);
 }

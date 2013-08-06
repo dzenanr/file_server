@@ -8,7 +8,7 @@ http://localhost:8080
 File Server
 
 Copy the server_files directory to a directory that is easily reachable.
-For example: C:/server_files
+For example: C:/server_files or /home/dr/server_files (update main before run)
 Run file_server.dart
 In a browser, use:
 http://localhost:8081
