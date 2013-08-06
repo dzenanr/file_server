@@ -18,7 +18,8 @@ startServer(String directoryAbsolutePath) {
         fileRelativePath = path.join(fileRelativePath, 'index.html');
       }
       String fileAbsolutePath =
-          path.join(directoryAbsolutePath, fileRelativePath);
+          //path.join(directoryAbsolutePath, fileRelativePath); // not working on Ubuntu!?
+          directoryAbsolutePath + fileRelativePath;
       print('file absolute path: ${fileAbsolutePath}');
       final File file = new File(fileAbsolutePath);
       file.exists().then((bool found) {
@@ -37,8 +38,11 @@ startServer(String directoryAbsolutePath) {
 }
 
 main() {
-  //var directoryAbsolutePath = 'C:\\server_files';
-  var directoryAbsolutePath = 'C:/server_files';
+  // Windows
+  // var directoryAbsolutePath = 'C:\\server_files';
+  // var directoryAbsolutePath = 'C:/server_files';
+  // Ubuntu
+  var directoryAbsolutePath = '/home/dr/server_files';
   // files in the directory: index.html, readme.txt, teams.pdf
   startServer(directoryAbsolutePath);
 }
